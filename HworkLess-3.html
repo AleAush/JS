@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    //Задание 1
+
+    <script>
+        var num = 0;
+
+        while (num <= 100) {
+            i = 1;
+            couter = 0;
+            while (i <= (num / 2)) {
+                if (num % i == 0) {
+                    couter++
+                };
+                i++
+            }
+            if (couter == 1) {
+                console.log(num)
+            };
+            num++;
+        }
+
+
+
+
+    </script>
+
+
+
+    //Задание 3
+
+    <script>
+
+
+        var prod = [{
+            name: "Товар 1", price: 100, count: 1
+        },
+        {
+            name: "Товар 2", price: 100, count: 2
+        },
+        {
+            name: "Товар 3", price: 100, count: 3
+        }
+        ]
+
+        function countBasketPrice(prod) {
+            var sum = 0;
+            for (var item of prod) {
+                sum += item.price * item.count;
+                console.log(item.price * item.count);
+            }
+            console.log(sum);
+        }
+        countBasketPrice(prod);
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
