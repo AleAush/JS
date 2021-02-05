@@ -1,0 +1,51 @@
++
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    //Задание 1
+
+    <script>
+        var a = prompt('Введите число от 0 до 999'),
+            aLength = a.length
+        obj = {};
+        fun(a);
+
+        function fun(a) {
+            if (a < 0 || a > 999) {
+                console.log('Вы ввели не верное число')
+            }
+            else {
+                switch (aLength) {
+                    case 1:
+                        obj.three = a[2];
+                        obj.two = a[1];
+                        obj.one = a[0];
+                        break;
+                    case 2:
+                        obj.two = a[1];
+                        obj.one = a[0];
+                        break;
+                    default:
+                        obj.one = a[0];
+                }
+                console.log(obj);
+            }
+            return (obj);
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
